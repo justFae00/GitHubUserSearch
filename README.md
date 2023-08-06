@@ -1,6 +1,6 @@
 # GitHub User Search
 
-Simple user search app using GutHub API. This project was inspired by [html-css-javascript-projects](https://github.com/solygambas/html-css-javascript-projects/tree/main) repository.
+Simple user search app using GutHub API, done in html, css and javascript. This project was inspired by [html-css-javascript-projects](https://github.com/solygambas/html-css-javascript-projects/tree/main) repository.
 
 API from [GitHub](https://api.github.com/).
 
