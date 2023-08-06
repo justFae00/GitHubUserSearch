@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profiles</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/21e49bdcfc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="hideElements()">
+    <img
+      id="loader"
+      src="https://github.githubassets.com/images/mona-loading-default.gif"
+      alt="loading"
+    />
+    <label class="switch">
+      <input id="toggle" type="checkbox" />
+      <span class="mode"></span>
+    </label>
+
+    <div id="input-container">
+      <input
+        type="text"
+        name=""
+        id="input-box"
+        placeholder="search GitHub users"
+      />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div id="result-container">
+      <img id="avatar" />
+
+      <div id="info-container">
+        <a id="username"></a>
+        <p id="name"></p>
+        <div id="information">
+          <a id="followers"></a>
+          <a id="followings"></a>
+          <a id="repos"></a>
+        </div>
+        <div id="latest-repos">
+          <a id="repo1"></a>
+          <a id="repo2"></a>
+          <a id="repo3"></a>
+          <a id="repo4"></a>
+          <a id="repo5"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

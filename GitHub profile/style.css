@@ -1,0 +1,194 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+  text-decoration: none;
+}
+
+body {
+  background-color: #f6f8fa;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: absolute;
+  cursor: pointer;
+  top: 0.6cm;
+  left: 0.6cm;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.mode {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+  background-color: #d8dee4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mode:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: #2f81f7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+input:checked + .mode {
+  background-color: #0d1117;
+}
+
+input:focus + .mode {
+  box-shadow: 0 0 1px #0d1117;
+}
+
+input:checked + .mode:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#loader {
+  width: 3cm;
+  height: 3cm;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 10.2cm;
+  z-index: 1;
+  visibility: hidden;
+}
+
+#input-container {
+  border-color: #d8dee4;
+  border-style: solid;
+  border-width: 2.5px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 3cm;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 30px;
+}
+
+#input-box {
+  background-color: #f6f8fa;
+  width: 8cm;
+  height: 0.9cm;
+  margin: 3mm;
+  border: none;
+  font-size: 18px;
+  border-radius: 30px;
+  padding-left: 3mm;
+}
+
+.fa-magnifying-glass {
+  font-size: 22px;
+  margin-right: 4.5mm;
+  color: #d1d7dd;
+}
+
+#result-container {
+  background-color: white;
+  border-color: #d8dee4;
+  border-style: solid;
+  border-width: 2.5px;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 10.5cm;
+  width: 22cm;
+  height: 10cm;
+}
+
+#result-container:hover,
+#input-container:hover {
+  box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.6);
+  transition: 0.15s ease-in-out;
+}
+
+#avatar {
+  width: 5cm;
+  height: 5cm;
+  border-radius: 100px;
+  margin-left: 1cm;
+  margin-top: 2cm;
+}
+
+#info-container {
+  width: 15cm;
+  position: absolute;
+  left: 7.2cm;
+  top: 2cm;
+}
+
+#username {
+  position: absolute;
+  font-size: 30px;
+  top: -0.5cm;
+}
+
+#name {
+  position: absolute;
+  font-size: 24px;
+  top: 0.1cm;
+}
+
+#information {
+  font-size: 20px;
+  position: absolute;
+  top: 2.4cm;
+  max-width: 14.5cm;
+}
+
+#information a {
+  padding-right: 16mm;
+}
+
+#information a,
+#username {
+  color: black;
+}
+
+#latest-repos {
+  position: absolute;
+  font-size: 19px;
+  top: 4cm;
+  max-width: 14.5cm;
+}
+
+#latest-repos a {
+  padding-left: 3mm;
+  padding-right: 3mm;
+  padding-bottom: 1.5mm;
+  margin-right: 2mm;
+  margin-bottom: 2mm;
+  background-color: #ddf4ff;
+  border-radius: 27px;
+  display: inline-block;
+  color: #0969da;
+}
+
+#latest-repos a:hover {
+  opacity: 80%;
+}
